@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    perspective: 800px;
+    background-color: #000;
+}
+.videoop {
+    filter: brightness(1);
+    top: -95px;
+    height: 132vh;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+.nav
+{
+    height: 90px;
+    width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 80px;
+position: fixed;
+gap: 30px;
+z-index: 99;
+}
+
+
+.nav h1{
+  font-size: 70px;
+  
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing:none;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 0, 60);
+  -webkit-text-stroke: 3px red ;
+   
+ 
+    
+}
+.nav  .item a{
+    text-transform: uppercase;
+    font-weight: 300;
+   margin-left: 10vw;
+color: RED;
+font-weight: 400;
+
+    text-decoration: none;
+}
+
+.main{
+position: relative;
+background-color: rgba(0, 0, 0, 0);
+
+}
+.page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+.page h1{
+    margin-top: 30vh;
+    font-size: 100px;
+    font-weight: 800;
+    text-shadow: black;
+    shape-outside: margin-box;
+    position: relative;
+}
+.page h1::before{
+content:"BCR.ESPORTS";
+position: absolute;
+color: black;
+top: -5px;
+left: -5px;
+-webkit-text-stroke: 2px #95C11E;
+z-index: -1;
+
+
+
+}
+.page h2{
+    font-size: 25px;
+    font-weight: 600;
+  
+    margin-top: -20px;
+}
+.page p{
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+    display: inline;
+}
+.scroller{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+}
+#scroller1 h4{
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 700;
+color: transparent;
+    margin-right: 10px;
+    transition: all ease-in-out 0.3s;
+    -webkit-text-stroke: 2px #95C11E ;
+}
+#scroller1{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll ;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    
+    animation-iteration-count: infinite;
+}
+.scroller h4:hover{
+    color: #95C11E;
+}
+
+@keyframes scroll{
+    from{ transform: translateX(0);
+
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+.aboutus{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.aboutus img{
+    height: 210px;
+    width: 250px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.aboutus p{
+font-size: 15px;
+line-height: 23px;
+}
+.aboutus h3{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 13px;
+}
+
+.container{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000;
+    position: relative;
+}
+#tell{
+   font-size: 70px;
+   color: #000;
+    position: absolute;
+    -webkit-text-stroke: 2px white;
+}
+.p1{
+  margin-top: 25vh;
+    height: 80vh;
+    
+    width: 25vw;
+    
+}
+.p2{
+    margin-top: 25vh;
+    height: 80vh;
+    width: 25vw;
+}
+.p3{
+    margin-top: 25vh;
+    height: 80vh;
+    width: 25vw;
+}
+.l1 video{
+ 
+    height: 38vh;
+    margin-bottom: 2vh;
+    width: 25vw;
+    border: 2px solid white;
+
+
+}
+.l2{
+  background-image: url('image/WhatsApp Image 2024-06-15 at 11.05.36_22cd8033.jpg');
+  background-size: cover;
+  background-position: center; 
+  height: 40vh;
+    width: 25vw;
+    border-radius: 20px;
+  
+}
+.r1 video{
+    border: 2px solid white;
+    height: 38vh;
+    margin-bottom: 2vh;
+    width: 25vw;
+}
+.r2{
+    
+    background-image: url('image/WhatsApp Image 2024-06-15 at 11.05.36_22cd8033.jpg');
+    background-size: cover;
+    background-position: center; 
+    height: 40vh;
+    width: 25vw;
+    border-radius: 20px;
+}
+.w1 video{
+    border: 2px solid white;
+    height: 38vh;
+    margin-bottom: 2vh;
+    width: 25vw;
+   
+}
+.w2{
+    background-image: url('image/WhatsApp Image 2024-06-15 at 11.05.36_22cd8033.jpg');
+    background-size: cover;
+    background-position: center; 
+    height: 40vh;
+    width: 25vw;
+    border-radius: 20px;
+}
+.over{
+    height: 40vh;
+    width: 25vw;
+    background-color: #95C11E;
+    padding-top: 110px;
+    padding: 30px;
+    opacity: 0;
+    transition: all ease 0.2s;
+}
+.over h1{
+    color: black;
+    font-size: 27px;
+  
+    font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 20px;
+white-space: nowrap;
+}
+.tell{
+
+}
+.p1:hover .over{
+    opacity: 1;
+}
+.p2:hover .over{
+    opacity: 1;
+}
+.p3:hover .over{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background-color: #000;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+position: relative;
+}
+.page2 p{
+    font-size: 30px;
+    font-weight: 500;
+    width: 50%;
+    line-height: 45px;
+    text-align: center;
+   position:fixed;
+}
+.page2 #colon1{
+    height: 70px;
+    margin-top: -40vh;
+    margin-right: 60vw;
+   position: absolute;
+}
+.page2 #colon2{
+    height: 70px;
+   margin-top: 30vh;
+    margin-right: -60vw;
+}
+
+
+i {
+	position: relative;
+	display: block;
+	width: 800px;
+	height: 400px;
+    margin-left: 20vw;
+	overflow: hidden;
+	border-radius: 5px;
+    margin-top: 20vh;
+   
+}
+
+i:before, i:after {
+	content: '⥪';
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	z-index: 2;
+	width: 4rem;
+	height: 4rem;
+	background: rgb(30, 221, 255);
+	color: black;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+i:after {
+	content: '⥭';
+	left: auto;
+	right: 1rem;
+   
+}
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+input {
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translateX(100%);
+	transition: transform ease-in-out 400ms;
+	z-index: 1;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:after {
+	content: attr(title);
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: .5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+input:not(checked):before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: 50%;
+	left: calc(-100% + 1rem);
+}
+
+input:checked:before {
+	display: none;
+	left: 1rem;
+}
+
+input:checked {
+	transform: translateX(0);
+	pointer-event: none;
+	z-index: 0;
+	box-shadow: -5px 10px 20px -15px rgb(0, 0, 0);
+}
+
+input:checked + input:before {
+	left: -3rem;
+}
+
+input:checked + input ~ input:before {
+	display: none;
+}
